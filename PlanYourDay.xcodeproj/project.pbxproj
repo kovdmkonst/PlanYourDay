@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5189841C2709978A0011045E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189841B2709978A0011045E /* ScheduleViewController.swift */; };
+		5189841E2709979C0011045E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189841D2709979C0011045E /* TasksViewController.swift */; };
+		51898420270998090011045E /* IdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189841F270998090011045E /* IdeasViewController.swift */; };
 		518E94D22705D8F00054C95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E94D12705D8F00054C95B /* AppDelegate.swift */; };
 		518E94D42705D8F00054C95B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E94D32705D8F00054C95B /* SceneDelegate.swift */; };
-		518E94D62705D8F00054C95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E94D52705D8F00054C95B /* ViewController.swift */; };
+		518E94D62705D8F00054C95B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E94D52705D8F00054C95B /* MainTabBarController.swift */; };
 		518E94DB2705D8F10054C95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E94DA2705D8F10054C95B /* Assets.xcassets */; };
 		518E94DE2705D8F10054C95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E94DC2705D8F10054C95B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5189841B2709978A0011045E /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5189841D2709979C0011045E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		5189841F270998090011045E /* IdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasViewController.swift; sourceTree = "<group>"; };
 		518E94CE2705D8F00054C95B /* PlanYourDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanYourDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E94D12705D8F00054C95B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518E94D32705D8F00054C95B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		518E94D52705D8F00054C95B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		518E94D52705D8F00054C95B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		518E94DA2705D8F10054C95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518E94DD2705D8F10054C95B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518E94DF2705D8F10054C95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +60,41 @@
 		518E94D02705D8F00054C95B /* PlanYourDay */ = {
 			isa = PBXGroup;
 			children = (
+				518E94E52705DEAF0054C95B /* Application */,
+				518E94E62705DEBE0054C95B /* Controllers */,
+				518E94E72705DEDB0054C95B /* Resources */,
+			);
+			path = PlanYourDay;
+			sourceTree = "<group>";
+		};
+		518E94E52705DEAF0054C95B /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				518E94D12705D8F00054C95B /* AppDelegate.swift */,
 				518E94D32705D8F00054C95B /* SceneDelegate.swift */,
-				518E94D52705D8F00054C95B /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		518E94E62705DEBE0054C95B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				518E94D52705D8F00054C95B /* MainTabBarController.swift */,
+				5189841B2709978A0011045E /* ScheduleViewController.swift */,
+				5189841D2709979C0011045E /* TasksViewController.swift */,
+				5189841F270998090011045E /* IdeasViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		518E94E72705DEDB0054C95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				518E94DA2705D8F10054C95B /* Assets.xcassets */,
 				518E94DC2705D8F10054C95B /* LaunchScreen.storyboard */,
 				518E94DF2705D8F10054C95B /* Info.plist */,
 			);
-			path = PlanYourDay;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518E94D62705D8F00054C95B /* ViewController.swift in Sources */,
+				518E94D62705D8F00054C95B /* MainTabBarController.swift in Sources */,
+				51898420270998090011045E /* IdeasViewController.swift in Sources */,
 				518E94D22705D8F00054C95B /* AppDelegate.swift in Sources */,
+				5189841E2709979C0011045E /* TasksViewController.swift in Sources */,
 				518E94D42705D8F00054C95B /* SceneDelegate.swift in Sources */,
+				5189841C2709978A0011045E /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlanYourDay/Info.plist;
+				INFOPLIST_FILE = PlanYourDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlanYourDay/Info.plist;
+				INFOPLIST_FILE = PlanYourDay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
