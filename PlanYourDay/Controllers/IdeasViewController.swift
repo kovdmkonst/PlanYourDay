@@ -11,5 +11,8 @@ class IdeasViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Ideas"
+
     }
 }
